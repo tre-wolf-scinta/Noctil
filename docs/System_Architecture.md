@@ -10,20 +10,21 @@
 
 ### 
 
-### \### 1. System Overview
+### \1. System Overview
 
 
 
 Noctil is a headless Raspberry Pi 5 based embedded system that continuously scans for BLE beacon advertisements and converts them into navigational cues for blind and visually impaired users. The system supports multi-slot beacon signaling, real-time telemetry, audio guidance, and a local web-based configuration and monitoring interface.
+
 The system is designed to operate continuously as a system service and to function without any attached display, keyboard, or mouse.
 
 ### 
 
-### \### 2. Design Goals
+### \2. Design Goals
 
 #### 
 
-#### \#### Primary Goals
+#### \Primary Goals
 
 * Reliable BLE advertisement ingestion with low latency
 * Robust handling of noisy RSSI signals
@@ -92,7 +93,7 @@ Each signal is broadcast using a distinct iBeacon identity via a dedicated slot.
 
 ### 
 
-### \### 4. BLE Ingestion Layer
+### \4. BLE Ingestion Layer
 
 #### 
 
@@ -242,15 +243,11 @@ Proximity is classified into discrete states rather than attempting absolute dis
 
 State transitions apply hysteresis and minimum dwell times to prevent flapping.
 
-#### 
-
-#### \#### 7.3 Event detection
+#### \7.3 Event detection
 
 Button and motion signals are treated as short-lived event sources.
 
-##### 
-
-##### \##### Event detection logic
+##### \Event detection logic
 
 * Burst detection within a sliding time window
 * Minimum packet count threshold
@@ -260,20 +257,17 @@ Button and motion signals are treated as short-lived event sources.
 
 Detected events are emitted as high-level navigation events.
 
-#### 
 
-\### 8. Navigation Engine 
+###\8. Navigation Engine 
 
-#### \#### 8.1 Responsibilities
+#### \8.1 Responsibilities
 
 * Maintain current navigation target
 * Interpret proximity and trend information
 * Generate guidance cues
 * Enforce rate limits on output
 
-#### 
-
-#### \#### 8.2 Navigation states
+#### \8.2 Navigation states
 
 * Idle
 * Acquiring
@@ -282,12 +276,9 @@ Detected events are emitted as high-level navigation events.
 * Lost
 
 
-
 Transitions are driven by confidence, proximity stability, and user commands.
 
-### 
-
-### \### 9. Audio output subsystem
+### \9. Audio output subsystem
 
 #### 
 
