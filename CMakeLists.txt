@@ -13,6 +13,7 @@ find_package(Threads REQUIRED)
 
 add_executable(noctil_engine
     src/main.cpp
+    src/core/EventLoop.cpp
 )
 
 

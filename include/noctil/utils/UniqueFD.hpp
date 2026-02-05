@@ -1,3 +1,10 @@
+/** Component: UniqueFD (class)
+ *   Role: Resource manager
+ *   Description: UniqueFD is an RAII wrapper surrounding a raw file descriptor (FD) that ensures exclusive ownership of the descriptor and 
+ *   guarantees that close() is called exactly once when the object goes out of scope.
+ *   By binding resource and object lifetimes, resource leaks are prevented even if exceptions occur.
+**/
+
 #pragma once
 
 #include <unistd.h>  // for close()
