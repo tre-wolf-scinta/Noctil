@@ -1,0 +1,3 @@
+/mnt/c/users/tre_s/onedrive/desktop/noctil/build/CMakeFiles/noctil_engine.dir
+/mnt/c/users/tre_s/onedrive/desktop/noctil/build/CMakeFiles/edit_cache.dir
+/mnt/c/users/tre_s/onedrive/desktop/noctil/build/CMakeFiles/rebuild_cache.dir

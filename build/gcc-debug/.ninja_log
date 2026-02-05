@@ -1,2 +1,6 @@
 # ninja log v5
 11	112	1770156905711325000	CMakeFiles/noctil_engine.dir/src/main.cpp.o	8263db153e0a0c68
+211	1716	1770250161275013800	build.ninja	61271845de727f8
+86	1879	1770250163265686700	CMakeFiles/noctil_engine.dir/src/core/EventLoop.cpp.o	ea5dd99d43c5fca7
+79	3437	1770250164774119600	CMakeFiles/noctil_engine.dir/src/main.cpp.o	8263db153e0a0c68
+3517	9324	1770250170723486600	noctil_engine	e3e325d4ad0afe5c

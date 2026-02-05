@@ -56,6 +56,13 @@ build CMakeFiles/noctil_engine.dir/src/main.cpp.o: CXX_COMPILER__noctil_engine_u
   OBJECT_DIR = CMakeFiles/noctil_engine.dir
   OBJECT_FILE_DIR = CMakeFiles/noctil_engine.dir/src
 
+build CMakeFiles/noctil_engine.dir/src/core/EventLoop.cpp.o: CXX_COMPILER__noctil_engine_unscanned_Debug /mnt/c/users/tre_s/onedrive/desktop/noctil/src/core/EventLoop.cpp || cmake_object_order_depends_target_noctil_engine
+  DEP_FILE = CMakeFiles/noctil_engine.dir/src/core/EventLoop.cpp.o.d
+  FLAGS = -g -std=c++20 -Wall -Wextra -Wpedantic -Werror
+  INCLUDES = -I/mnt/c/users/tre_s/onedrive/desktop/noctil/include
+  OBJECT_DIR = CMakeFiles/noctil_engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/noctil_engine.dir/src/core
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target noctil_engine
@@ -64,7 +71,7 @@ build CMakeFiles/noctil_engine.dir/src/main.cpp.o: CXX_COMPILER__noctil_engine_u
 #############################################
 # Link the executable noctil_engine
 
-build noctil_engine: CXX_EXECUTABLE_LINKER__noctil_engine_Debug CMakeFiles/noctil_engine.dir/src/main.cpp.o
+build noctil_engine: CXX_EXECUTABLE_LINKER__noctil_engine_Debug CMakeFiles/noctil_engine.dir/src/main.cpp.o CMakeFiles/noctil_engine.dir/src/core/EventLoop.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/noctil_engine.dir
   POST_BUILD = :
